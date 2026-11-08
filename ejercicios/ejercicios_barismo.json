@@ -1,0 +1,75 @@
+{
+  "modulo": "barismo_y_extraccion",
+  "titulo": "Banco de Casos Prácticos: Calibración y Física de la Extracción",
+  "descripcion": "Problemas de calibración en barra, refractometría con refractómetro digital y optimización de métodos de preparación.",
+  "total_ejercicios": 3,
+  "fecha_actualizacion": "2026-11-08",
+  "ejercicios": [
+    {
+      "id_tema": 1,
+      "id_global": 1,
+      "tema": "barismo_y_extraccion",
+      "titulo": "Calibración de Molienda para Doble Espresso (Dialing In)",
+      "enunciado": "Durante la apertura de la barra de café de especialidad, usted utiliza un grano de origen Colombia Huila (proceso lavado, tueste medio-claro). En la primera extracción de prueba se coloca una dosis seca de 18.0 g en la canastilla de 58 mm y se obtiene un rendimiento líquido de 36.0 g en apenas 14 segundos.\na) Analice las fallas del perfil sensorial previsible (balance entre acidez málica, dulzor y cuerpo).\nb) De acuerdo a la tabla de calibración granulométrica adjunta, determine la corrección de micrones en las muelas del molino.\nc) Justifique cómo la disminución del tamaño de partícula altera la permeabilidad hidráulica del lecho y el tiempo de contacto.",
+      "recurso_visual": {
+        "tipo": "markdown_tabla",
+        "formato": "markdown",
+        "codigo": "| Molienda (Micrones) | Tiempo de Erogación (s) | Perfil Sensorial | Diagnóstico |\n| :--- | :--- | :--- | :--- |\n| 360 µm | 14 s | Salino, punzante, cuerpo aguado | Sub-extracción severa |\n| 310 µm | 20 s | Ácido cítrico, acidez no integrada | Sub-extracción leve |\n| 260 µm | 27 s | Notas a caramelo, durazno, cuerpo sedoso | Extracción balanceada (Óptimo) |\n| 210 µm | 38 s | Amargo a ceniza, astringencia seca | Sobre-extracción |"
+      },
+      "fuente_original": "Manual de Calibración en Barra — Specialty Coffee Association (SCA)",
+      "es_ejercicio_propuesto_diapositivas": true,
+      "resolucion_propuesta": [
+        {
+          "fuente_propuesta": "Módulo 1 - Diapositiva 4",
+          "clasificacion": "barismo_y_extraccion",
+          "complejidad_esperada": "18.0g \\to 36.0g \\text{ en } 26-28\\text{ s}",
+          "estrategia_sugerida": "El agua atravesó la pastilla demasiado rápido debido a una molienda excesivamente gruesa (360 µm) que ofreció poca resistencia hidráulica. Debe cerrarse el molino hacia un punto más fino (aproximadamente 260 µm) para incrementar la densidad del lecho, extender el tiempo de contacto a 26-28 segundos y permitir la extracción de azúcares y lípidos aromáticos."
+        }
+      ]
+    },
+    {
+      "id_tema": 2,
+      "id_global": 2,
+      "tema": "barismo_y_extraccion",
+      "titulo": "Cálculo de Extraction Yield en V60 con Refractómetro",
+      "enunciado": "En un campeonato de Brewers Cup, un barista prepara una receta en Hario V60 utilizando 15.0 g de café Geisha de Panamá y 240.0 g de agua caliente a 93°C. Al finalizar la preparación, la báscula registra una masa neta de bebida filtrada en la jarra de 214.0 g (dado que la borra de café retiene agua).\nCon un refractómetro digital calibrado a 20°C, se obtiene una lectura de concentración de Total Dissolved Solids de TDS = 1.38%.\na) Calcule el Rendimiento de Extracción (Extraction Yield en %) aplicando la fórmula oficial de la SCA.\nb) Evalúe si la taza se encuentra dentro del rango de la 'Taza Dorada' (Golden Cup Standard de 18.0% a 22.0%).\nc) Si el barista deseara elevar el rendimiento al 20.5% sin variar la dosis, ¿qué variables de preparación podría modificar?",
+      "recurso_visual": {
+        "tipo": "latex",
+        "formato": "latex",
+        "codigo": "\\text{Extraction Yield (\\%)} = \\frac{\\text{TDS (\\%)} \\times \\text{Masa de Café en Taza (g)}}{\\text{Dosis de Café Seco (g)}}"
+      },
+      "fuente_original": "Brewers Cup Championship Rules & Standards",
+      "es_ejercicio_propuesto_diapositivas": true,
+      "resolucion_propuesta": [
+        {
+          "fuente_propuesta": "Módulo 2 - Diapositiva 8",
+          "clasificacion": "barismo_y_extraccion",
+          "complejidad_esperada": "\\text{EY} = 19.69\\%",
+          "estrategia_sugerida": "Aplicando la fórmula: EY = (1.38 * 214.0) / 15.0 = 295.32 / 15.0 = 19.69%. El valor de 19.69% se encuentra exactamente en el centro de la ventana dorada de la SCA (18.0% a 22.0%), garantizando un balance óptimo de dulzor, acidez y cuerpo sin astringencia. Para elevarlo al 20.5%, se puede moler ligeramente más fino o elevar la temperatura a 94°C."
+        }
+      ]
+    },
+    {
+      "id_tema": 3,
+      "id_global": 3,
+      "tema": "barismo_y_extraccion",
+      "titulo": "Árbol de Decisión: Selección del Método de Filtrado",
+      "enunciado": "Un cliente solicita una recomendación de café en barra. Dispone de tres orígenes de microlotes: Etiopía Sidama natural (notas florales de jazmín y bergamota), Colombia Huila lavado (balance cítrico de naranja y miel) y Brasil Cerrado natural (cuerpo pesado, chocolate con leche y avellanas).\na) Utilice el árbol de decisión adjunto para asignar el método de extracción ideal para cada perfil de grano.\nb) Explique por qué un café de notas florales y acidez delicada se beneficia más de la Chemex o el V60 que de una Prensa Francesa.",
+      "recurso_visual": {
+        "tipo": "mermaid",
+        "formato": "mermaid",
+        "codigo": "graph TD\n    A[Perfil del Grano de Especialidad] --> B{¿Qué atributo busca destacar?}\n    B -- Acidez cítrica y notas florales --> C[Filtro cónico de papel fino]\n    C --> C1[Hario V60 / Origami cónico]\n    B -- Claridad cristalina y cuerpo sedoso liviano --> D[Papel grueso triple capa]\n    D --> D1[Chemex]\n    B -- Cuerpo pesado y notas achocolatadas --> E[Filtro de malla metálica]\n    E --> E1[Prensa Francesa]\n    B -- Versatilidad de cuerpo e intensidad --> F[Inmersión con presión manual]\n    F --> F1[Aeropress]"
+      },
+      "fuente_original": "Guía de Catación y Maridaje en Cafeterías de Tercera Ola",
+      "es_ejercicio_propuesto_diapositivas": false,
+      "resolucion_propuesta": [
+        {
+          "fuente_propuesta": "Módulo 2 - Diapositiva 3",
+          "clasificacion": "barismo_y_extraccion",
+          "complejidad_esperada": "Chemex / V60 vs. Prensa Francesa",
+          "estrategia_sugerida": "El café etíope natural o floral requiere un método de percolación con filtro de papel (V60 o Chemex) que retenga los sedimentos pesados y permita percibir la acidez limpia y los volátiles etéreos. La Prensa Francesa, al usar malla metálica, aporta un cuerpo pesado y aceites que opacan las notas florales sutiles, siendo en cambio ideal para granos achocolatados como el Brasil Cerrado."
+        }
+      ]
+    }
+  ]
+}

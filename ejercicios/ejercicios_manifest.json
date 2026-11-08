@@ -1,0 +1,14 @@
+{
+  "titulo": "Banco de Ejercicios y Calibración — Barismo y Café de Especialidad",
+  "descripcion": "Colección de casos prácticos de calibración de espresso en barra, refractometría con refractómetro digital y árboles de decisión de métodos de extracción.",
+  "fecha_actualizacion": "2026-11-08",
+  "total_ejercicios_global": 3,
+  "modulos": [
+    {
+      "tema": "barismo_y_extraccion",
+      "archivo": "ejercicios_barismo.json",
+      "titulo": "Banco de Casos Prácticos: Calibración y Física de la Extracción",
+      "cantidad_ejercicios": 3
+    }
+  ]
+}

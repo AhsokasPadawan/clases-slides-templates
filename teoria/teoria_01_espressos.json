@@ -1,0 +1,60 @@
+{
+  "modulo": "01_espressos",
+  "titulo_general": "Barismo y Café de Especialidad — Módulo 1: El Universo del Espresso",
+  "institucion": "Specialty Coffee Academy",
+  "catedra": "Fundamentos de Barismo y Calibración de Espresso",
+  "profesor": "Equipo de Maestros Tostadores y Baristas SCA",
+  "descripcion": "Estudio analítico de la extracción bajo presión (9 bares), dinámica de la emulsión y crema, calibración de molienda y los grandes clásicos: Espresso, Doppio, Macchiato, Flat White y Caffè Latte.",
+  "secciones": [
+    {
+      "id": "fundamentos_espresso",
+      "tipo": "teoria_formal",
+      "titulo": "1. Fundamentos de la Extracción por Presión",
+      "subtemas": [
+        {
+          "id": "quimica_y_mecanica_espresso",
+          "titulo": "Física y Dinámica del Espresso (9 Bares)",
+          "teoria": "Bajo nueve bares de presión continua, el agua caliente atraviesa la pastilla compacta para forzar el nacimiento de un néctar denso y aterciopelado:\n- Presión nominal: 9 bar (aprox. 8.88 atm), calibrada en la bomba rotativa para vencer la resistencia hidráulica del lecho de molienda.\n- Temperatura de erogación: Rango estricto entre 90°C y 94°C. Temperaturas menores a 90°C derivan en acidez punzante e inducen sub-extracción; superiores a 94°C queman aceites volátiles y generan amargor seco.\n- Granulometría micrométrica: Molienda fina bimodal entre 200 µm y 300 µm, asegurando superficie de contacto masiva sin compactación asimétrica.\n- La Crema: Emulsión coloidal de microburbujas de dióxido de carbono (CO₂) atrapadas en aceites aromáticos, responsable de la persistencia de aromas en el paladar.",
+          "animaciones": null,
+          "pseudocodigo": null,
+          "codigo": null,
+          "analisis_complejidad": null
+        },
+        {
+          "id": "espresso_simple_y_doppio",
+          "titulo": "Espresso Simple vs. Doble Espresso (Doppio)",
+          "teoria": "El estándar moderno de calibración de especialidad toma como eje rector el Doble Espresso (Doppio) en canastilla de 18 gramos:\n- Espresso Simple (Single): 9 a 10 g de café seco para erogar 18 a 20 g de bebida líquida en 22 a 26 segundos.\n- Doble Espresso (Doppio): 18 a 20 g de café molido seco (dose in) para extraer 36 a 40 g de café en taza (yield out) en una ventana de 25 a 30 segundos.\n- Brew Ratio: Relación canónica de 1:2. Para granos de tueste claro de altura se admiten ratios de 1:2.2 a 1:2.5; para tuestes medios se prefieren ratios de 1:1.8 a 1:2.\n- Diagnóstico de canalizaciones: El brote prematuro antes de los 6 segundos de pre-infusión evidencia fisuras internas (channeling) que arruinan el balance en taza.",
+          "animaciones": null,
+          "pseudocodigo": "algoritmo CalibrarEspresso(dosisIn : Real, rendimientoOut : Real, tiempoSeg : Entero) -> Cadena\nInicio\n    ratio <- rendimientoOut / dosisIn\n    Si tiempoSeg < 22 Entonces\n        Devolver \"Sub-extraído: moler más fino para aumentar resistencia\"\n    Sino Si tiempoSeg > 32 Entonces\n        Devolver \"Sobre-extraído: moler más grueso para agilizar flujo\"\n    Sino\n        Devolver \"Extracción balanceada en ventana óptima\"\n    FinSi\nFin",
+          "codigo": {
+            "lenguaje": "java",
+            "codigo_fuente": "public class EspressoDialing {\n    public static String evaluarExtraccion(double dosisIn, double yieldOut, int segundos) {\n        double brewRatio = yieldOut / dosisIn;\n        if (segundos < 22) {\n            return \"Sub-extraccion: Acido y rapido. Ajustar molienda a micrones menores.\";\n        } else if (segundos > 32) {\n            return \"Sobre-extraccion: Amargo y astringente. Abrir molienda.\";\n        }\n        return String.format(\"Extraccion equilibrada: Ratio 1:%.1f en %d segundos.\", brewRatio, segundos);\n    }\n}",
+            "correcciones_realizadas": null
+          },
+          "analisis_complejidad": {
+            "temporal": "O(1)",
+            "espacial": "O(1)",
+            "teorema_aplicado": "Ecuación de permeabilidad de Darcy para medios porosos",
+            "observaciones": "La resistencia al flujo depende cuadráticamente del diámetro medio de las partículas de molienda y de la homogeneidad del apisonado (tamping)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "clasicos_con_leche",
+      "tipo": "teoria_formal",
+      "titulo": "2. Clásicos con Leche Texturizada",
+      "subtemas": [
+        {
+          "id": "macchiato_flatwhite_latte",
+          "titulo": "Macchiato, Flat White y Caffè Latte",
+          "teoria": "Las proporciones milimétricas entre espresso concentrado y leche micro-texturizada definen tres identidades sensoriales inconfundibles:\n- Caffè Macchiato: Un doppio (36 ml) manchado con una sutil capa de microespuma sedosa (10 a 15 ml). Mantiene intacta la fuerza del espresso con un halo de dulzura láctea.\n- Flat White: Doble ristretto corto (30 a 36 ml) con leche micro-texturizada a 60°C servida en taza baja de 150 a 160 ml. Destaca por una capa de microespuma ultra fina (menor a 5 mm), ofreciendo textura de terciopelo y claro predominio del grano.\n- Caffè Latte: Proporción suave y reconfortante. Un espresso (36 ml) acompañado de 200 a 240 ml de leche vaporizada y una corona ligera de crema de 1 cm.\n- Termodinámica del vaporizado: La lanceta inyecta microburbujas a 60°C a 65°C. Superar los 68°C destruye las proteínas del suero (whey), apagando el dulzor natural de la lactosa.",
+          "animaciones": null,
+          "pseudocodigo": null,
+          "codigo": null,
+          "analisis_complejidad": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "modulo": "02_filtrados",
+  "titulo_general": "Barismo y Café de Especialidad — Módulo 2: Métodos de Filtrado Manual (Pour-Over e Inmersión)",
+  "institucion": "Specialty Coffee Academy",
+  "catedra": "Fundamentos de Barismo y Métodos de Filtrado",
+  "profesor": "Equipo de Maestros Tostadores y Baristas SCA",
+  "descripcion": "Análisis comparativo de los 5 grandes métodos de preparación manual: Hario V60, Chemex, Origami Dripper, Prensa Francesa y Aeropress. Dinámica de fluidos, refractometría, Total Dissolved Solids (TDS) y Extraction Yield.",
+  "secciones": [
+    {
+      "id": "metodos_pour_over",
+      "tipo": "teoria_formal",
+      "titulo": "1. Métodos de Goteo Manual (Pour-Over)",
+      "subtemas": [
+        {
+          "id": "v60_y_chemex",
+          "titulo": "Hario V60 y Chemex: Claridad, Ángulo y Densidad de Filtro",
+          "teoria": "Los métodos de percolación por gravedad transforman el caudal de vertido en una infusión de pureza cristalina:\n- Hario V60 (Japón): Cono a 60° con nervaduras helicoidales internas y orificio inferior amplio. Entrega flujo de aire constante y control milimétrico al barista. Papel japonés delgado que destaca acidez cítrica y notas florales. Molienda media-fina (500 µm a 650 µm), ratio 1:16, tiempo de extracción de 2:30 a 3:00 min.\n- Chemex (EE. UU., 1941): Matraz de borosilicato diseñado por el químico Peter Schlumbohm. Filtros de celulosa pesada plegados en triple capa que retienen todos los aceites y micro-sedimentos. Taza cristalina, etérea y limpia. Molienda media-gruesa (700 µm a 850 µm), ratio 1:15 a 1:16, tiempo de extracción de 3:30 a 4:30 min.\n- Perfil en taza comparado: Mientras el V60 resalta notas vivas y acidez punzante, la Chemex suaviza aristas y entrega un perfil similar a una infusión de té premium.",
+          "animaciones": null,
+          "pseudocodigo": null,
+          "codigo": null,
+          "analisis_complejidad": null
+        },
+        {
+          "id": "origami_dripper",
+          "titulo": "Origami Dripper: Geometría Multifacética y Control Híbrido",
+          "teoria": "El Origami Dripper fusiona la tradición artesanal japonesa con el control hidrodinámico de vanguardia:\n- Geometría de 20 pliegues: Veinte nervaduras longitudinales crean canales de aire verticales que eliminan la adherencia del papel y aceleran el drenaje sin acumulaciones.\n- Compatibilidad dual de filtros: Admite filtros cónicos (V60) para maximizar acidez málica y notas florales, o filtros planos de ondas (Kalita Wave) para favorecer dulzor, cuerpo y extracción regular.\n- Estabilidad térmica cerámica: La porcelana Minoware retiene el calor durante toda la receta, amortiguando fluctuaciones de temperatura ambiente.",
+          "animaciones": null,
+          "pseudocodigo": null,
+          "codigo": null,
+          "analisis_complejidad": null
+        }
+      ]
+    },
+    {
+      "id": "metodos_inmersion",
+      "tipo": "teoria_formal",
+      "titulo": "2. Métodos de Inmersión y Presión Manual",
+      "subtemas": [
+        {
+          "id": "prensa_francesa_y_aeropress",
+          "titulo": "Prensa Francesa y Aeropress: Inmersión Total e Híbridos",
+          "teoria": "Frente al flujo continuo del pour-over, la inmersión sumerge el café durante todo el ciclo de contacto:\n- Prensa Francesa (French Press): Inmersión completa de 4:00 min con émbolo de malla metálica. No retiene aceites ni micro-partículas, logrando un cuerpo robusto, textura aterciopelada y notas profundas a chocolate y frutos secos. Molienda gruesa (900 µm a 1100 µm), ratio 1:12 a 1:14.\n- Aeropress (Alan Adler, 2005): Innovación que combina infusión estática breve con presión neumática manual generada por un pistón hermético. Admite método estándar e invertido.\n- Versatilidad del Aeropress: Permite tazas limpias pero intensas gracias a su micro-filtro de papel, con tiempos de preparación reducidos de 1:30 a 2:00 min y ratio 1:13 a 1:14.",
+          "animaciones": null,
+          "pseudocodigo": null,
+          "codigo": null,
+          "analisis_complejidad": null
+        }
+      ]
+    },
+    {
+      "id": "ciencia_y_refractometria",
+      "tipo": "teoria_formal",
+      "titulo": "3. Ciencia de la Extracción y Refractometría",
+      "subtemas": [
+        {
+          "id": "simulador_v60",
+          "titulo": "Simulación Paso a Paso: Extracción en V60",
+          "teoria": "La preparación metódica en V60 sigue una coreografía cronometrada en cinco fases fundamentales:\n- Purgado: Enjuagar el cono de papel con agua caliente a 93°C para neutralizar sabores a celulosa y calentar la jarra receptora.\n- Dosis y Nivelación: Colocar 15.0 g de café molido fresco y hacer un suave hueco céntrico para facilitar la saturación inicial.\n- The Bloom (Floración): Verter 45 g de agua y aguardar 45 segundos mientras las burbujas de dióxido de carbono (CO₂) liberan los poros del grano.\n- Primer Vertido Espiral: Espirales continuas desde el centro hacia los bordes hasta alcanzar 140 g de agua en balanza.\n- Segundo Vertido y Drawdown: Completar hasta 240 g con suave agitación (swirl), logrando una cama de café perfectamente plana a los 2:45 min.",
+          "animaciones": null,
+          "pseudocodigo": null,
+          "codigo": null,
+          "analisis_complejidad": null
+        },
+        {
+          "id": "metricas_refractometria",
+          "titulo": "Refractometría: Total Dissolved Solids (TDS) y Extraction Yield",
+          "teoria": "La evaluación objetiva cuantifica la fracción soluble disuelta en la taza mediante refractometría digital a 20°C:\n- Total Dissolved Solids (TDS): Porcentaje de masa de café disuelta en el agua. En filtrados de especialidad, el estándar SCA oscila entre 1.15% y 1.45%.\n- Extraction Yield (EY): Porcentaje del peso del café molido seco disuelto por el agua durante la infusión, con fórmula oficial EY = (TDS * Masa de Taza) / Dosis Seca.\n- Ventana Dorada (18% a 22%): Rendimiento que equilibra azúcares y lípidos sin ingresar en la sobre-extracción amarga ni en la sub-extracción agria.",
+          "animaciones": null,
+          "pseudocodigo": null,
+          "codigo": null,
+          "analisis_complejidad": null
+        }
+      ]
+    }
+  ]
+}
